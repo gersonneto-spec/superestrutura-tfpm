@@ -92,7 +92,7 @@ h2{font-size:clamp(30px,3.6vw,52px); font-weight:700; line-height:1.05; letter-s
 .lead b{color:var(--branco); font-weight:500}
 .kv{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:14px 22px; max-width:520px}
 .kv div{border-top:1px solid var(--linha); padding-top:10px}
-.kv b{display:block; font-family:var(--disp); font-size:clamp(24px,2.4vw,34px); font-weight:700; letter-spacing:-.02em; line-height:1; font-variant-numeric:tabular-nums}
+.kv b{display:block; font-family:var(--disp); font-size:clamp(22px,2.1vw,30px); font-weight:700; letter-spacing:-.02em; line-height:1; font-variant-numeric:tabular-nums}
 .kv span{font-size:12.5px; color:var(--cinza); letter-spacing:.02em}
 .tech{display:grid; gap:8px; border-left:2px solid var(--ouro); padding:6px 0 6px 16px; max-height:0; overflow:hidden; opacity:0; transition:max-height .5s ease, opacity .4s ease, margin .4s}
 body.tecnico .tech{max-height:320px; opacity:1}
@@ -314,33 +314,33 @@ document.getElementById("iso").innerHTML=SVG.join("");
 /* ---------- cenas ---------- */
 const S=[
  {k:"capa",date:"Set a Nov · 2026",eye:"Marka Engenharia · Metodologia executiva",
-  html:`<h1>Superestrutura<br>ferroviária</h1><p class="lead">Como a Marka vai montar a via da Oficina de Carros de Passageiros: <b>9 etapas, uma inspeção por etapa, entrega em 27/11</b>.</p><div class="kv"><div><b>9</b><span>etapas encadeadas</span></div><div><b>43</b><span>dias de execução</span></div><div><b>2</b><span>AMVs montados</span></div><div><b>360 m</b><span>barras TR 68</span></div></div>`,
+  html:`<h1>Superestrutura<br>ferroviária</h1><p class="lead">Como a Marka vai montar a via da Oficina de Carros de Passageiros: <b>9 etapas, uma inspeção por etapa, entrega em 27/11</b>.</p><div class="kv"><div><b>9</b><span>etapas encadeadas</span></div><div><b>15/10 → 27/11</b><span>execução no trecho</span></div><div><b>2</b><span>AMVs montados</span></div><div><b>360 m</b><span>barras TR 68</span></div></div>`,
   show:["g-solo","g-sub","g-sleep","g-lastro","g-rails","g-amv","g-amvw","g-mk"],tech:[]},
- {k:"base",date:"25/09/26",eye:"Ponto de partida",n:"00",
-  html:`<h2>A terraplenagem entrega o chão. Nós montamos a via.</h2><p class="lead">Plataforma regularizada, compactada e com sublastro. A superestrutura começa com <b>60% da plataforma liberada em 25/09</b> e recebe os 100% em 29/10.</p><div class="kv"><div><b>60%</b><span>liberação · 25/09</span></div><div><b>100%</b><span>liberação · 29/10</span></div></div>`,
+ {k:"base",date:"15/10/26",eye:"Ponto de partida",n:"00",
+  html:`<h2>A terraplenagem entrega o chão. Nós montamos a via.</h2><p class="lead">Plataforma regularizada, compactada e com sublastro. A superestrutura começa com <b>30% da plataforma liberada em 15/10</b> e recebe os 100% em 14/11.</p><div class="kv"><div><b>30%</b><span>liberação · 15/10</span></div><div><b>100%</b><span>liberação · 14/11</span></div></div>`,
   show:["g-solo","g-sub"],tech:["Item 6.4.2.10: sublastro em material granular sobre plataforma regularizada","Espessura, granulometria e grau de compactação conforme projeto","Liberações formais de trecho pela Vale (marcos 284 e 285 do cronograma)"],calls:[]},
- {k:"descarga",date:"25/09/26",eye:"Etapa 01 · Item 6.4.2.11",n:"01",
+ {k:"descarga",date:"15/10/26",eye:"Etapa 01 · Item 6.4.2.11",n:"01",
   html:`<h2>Descarga e distribuição dos Trilhos Longos Soldados</h2><p class="lead">O trem especial traz as barras. Munck e carregadeira descarregam <b>sem impacto e sem empeno</b>, e os TLS ficam ao lado da via, fora do gabarito de segurança.</p><div class="gate"><i>✓</i>Inspeção de saída: área, acessos, equipamentos, TLS alinhados e apoiados</div>`,
   show:["g-solo","g-sub","g-tls"],tech:["Caminhão Munck, carregadeira com garfo, carreta, tenaz, alavancas e macacos hidráulicos","Inspeção prévia de área, acessos, manobra e posição do trem com os vagões","Área isolada e sinalizada; comunicação permanente com o operador"],calls:[]},
- {k:"amv",date:"26/09 a 22/10/26",eye:"Etapa 02 · Item 6.4.2.12",n:"02",
-  html:`<h2>Montagem dos AMVs em duas etapas</h2><p class="lead">O aparelho de mudança de via é pré-montado em gabarito, com vigotas <b>numeradas e marcadas</b>, e depois remontado no trecho de forma idêntica. AMV TP02 de 26/09 a 08/10; AMV TP07 de 08/10 a 22/10.</p><div class="gate"><i>✓</i>Bitola, alinhamento, pontos notáveis e flecha conferidos no gabarito</div>`,
+ {k:"amv",date:"15/10 a 05/11/26",eye:"Etapa 02 · Item 6.4.2.12",n:"02",
+  html:`<h2>Montagem dos AMVs em duas etapas</h2><p class="lead">O aparelho de mudança de via é pré-montado em gabarito, com vigotas <b>numeradas e marcadas</b>, e depois remontado no trecho de forma idêntica. AMV TP02 de 15/10 a 27/10; AMV TP07 de 22/10 a 05/11.</p><div class="gate"><i>✓</i>Bitola, alinhamento, pontos notáveis e flecha conferidos no gabarito</div>`,
   show:["g-solo","g-sub","g-amvw","g-amv"],tech:["Pré-montagem: eixos da linha principal e desviada, trilhos de apoio, gabarito","Lado reto como referência: agulha, trilho externo reto, contratrilho","Placa bitoladora nas pontas das agulhas; flecha do trilho curvo conforme projeto","Ligação com a linha principal só nas paradas negociadas (mapa da Contratante)"],calls:["c-amv"]},
- {k:"grade",date:"26/09 a 07/11/26",eye:"Etapa 03 · Item 6.4.2.13",n:"03",
+ {k:"grade",date:"16/10 a 19/11/26",eye:"Etapa 03 · Item 6.4.2.13",n:"03",
   html:`<h2>Construção da grade ferroviária</h2><p class="lead">Dormentes de concreto no espaçamento de projeto, trilhos <b>TR 68 em barras de 360 m</b> sobre as palmilhas, união provisória com talas TJ 68 e fixação Pandrol Fast-Clip.</p><div class="gate"><i>✓</i>Espaçamento, alinhamento, uniões e fixações inspecionados</div>`,
   show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails","g-talas"],tech:["Dormentes conferidos com gabarito ou tenaz; palmilhas com marreta de borracha","Talas TJ 68 com parafusos, porcas e arruelas; corte e furação de trilho quando necessário","Grampos Fast-Clip com extrator e insersor; parafusadeira e tirefonadeira"],calls:["c-bitola","c-tr","c-dorm","c-clip"]},
- {k:"solda",date:"03/10 a 07/11/26",eye:"Etapa 04 · Item 6.4.2.14",n:"04",
+ {k:"solda",date:"23/10 a 19/11/26",eye:"Etapa 04 · Item 6.4.2.14",n:"04",
   html:`<h2>Soldagem aluminotérmica</h2><p class="lead">As talas saem. Cada junta recebe forma, pré-aquecimento e a reação que enche a forma com aço líquido. Depois, rebarbação, esmerilhamento e inspeção. <b>A via vira uma peça só.</b></p><div class="gate"><i>✓</i>Acabamento, perfil do trilho e junta soldada inspecionados</div>`,
   show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails"],weld:true,tech:["Preparo das pontas com máquina de cortar trilho; alinhamento com tenaz e macacos","Forma instalada com prensas e vedada com massa; cadinho com porção aluminotérmica","Rebarbadora hidráulica e esmerilhadeira; inspeção visual da junta e limpeza de resíduos"],calls:["c-weld"]},
- {k:"lastro",date:"07 a 12/11/26",eye:"Etapa 05 · Item 6.4.2.15",n:"05",
+ {k:"lastro",date:"19 a 21/11/26",eye:"Etapa 05 · Item 6.4.2.15",n:"05",
   html:`<h2>Lastreamento</h2><p class="lead">Os <b>Vagões HNT da Vale</b> descarregam a brita sobre a grade. A carregadeira espalha entre os dormentes, regulariza e conforma os ombros até a seção de projeto.</p><div class="gate"><i>✓</i>Distribuição, altura do lastro e acabamento dos ombros inspecionados</div>`,
   show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails","g-lastro"],tech:["Descarga em pontos distribuídos ao longo da plataforma","Carregadeira com concha para espalhamento e regularização","Compactação e acabamento da camada; seção final conforme projeto"],calls:["c-lastro"]},
- {k:"geo",date:"12 a 27/11/26",eye:"Etapa 06 · Item 6.4.2.16",n:"06",
+ {k:"geo",date:"21 a 27/11/26",eye:"Etapa 06 · Item 6.4.2.16",n:"06",
   html:`<h2>Nivelamento, alinhamento e socaria</h2><p class="lead">A grade é levada ao eixo topográfico e à cota de projeto. A <b>Socadora e Reguladora</b> consolida a brita sob cada dormente; trolley e régua conferem bitola, nível e superelevação.</p><div class="gate"><i>✓</i>Nenhum trecho liberado com desvio geométrico em aberto</div>`,
   show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails","g-lastro"],tamper:true,tech:["Alinhamento pelas referências topográficas; flechas uniformes nas curvas","Nivelamento longitudinal com macacos; transversal com trolley de inspeção","Socaria mecanizada (Socadora e Reguladora Vale) ou localizada (conjunto Jackson)"],calls:["c-soc","c-bitola"]},
  {k:"ten",date:"21 a 27/11/26",eye:"Etapa 07 · Item 6.4.2.17",n:"07",
   html:`<h2>Alívio de tensão</h2><p class="lead">Trilho soldado não tem folga para dilatar. Soltamos a barra sobre roletes, tracionamos com tensionador hidráulico até a <b>temperatura neutra</b> e fixamos de novo. Sem isso, o trilho enverga no calor ou parte no frio.</p><div class="gate"><i>✓</i>Temperatura do trilho conferida antes; posição, fixações e juntas depois</div>`,
   show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails","g-lastro"],ten:true,tech:["Só com trecho liberado e trilho dentro do limite em relação à temperatura neutra","Roletes sob o patim; apiloamento com marreta de bronze; tração até o valor especificado","Refixação antes de soltar o tensionador; reinstalação das talas"],calls:["c-ten"]},
- {k:"comp",date:"30/10 a 13/11/26",eye:"Etapas 08 e 09 · Itens 6.4.2.18 e 6.4.2.19",n:"08",
+ {k:"comp",date:"12 a 23/11/26",eye:"Etapas 08 e 09 · Itens 6.4.2.18 e 6.4.2.19",n:"08",
   html:`<h2>Passagem em nível, limitador e marcos</h2><p class="lead">A PN existente é desmontada com material segregado e a nova recebe placas poliméricas niveladas com o pavimento. No fim da linha, o <b>limitador de curso</b>; ao longo dela, marcos de segurança e de referência.</p><div class="gate"><i>✓</i>Alinhamento, nivelamento, travamento das placas e visibilidade dos marcos</div>`,
   show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails","g-lastro","g-pn","g-mk"],tech:["Desmontagem: fixações, corte e remoção de trilhos, dormentes, limpeza sem escavação indevida","Placas conforme especificação do fabricante; transição via e pavimento","Marcos posicionados nas referências e distâncias de projeto"],calls:["c-pn"]},
  {k:"ctrl",date:"Todas as etapas",eye:"Garantia da qualidade",
@@ -351,7 +351,7 @@ const S=[
   show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails","g-lastro","g-pn","g-mk"],tech:["Mapa de paradas emitido pela Contratante antes do início dos serviços","Parâmetros de temperatura neutra e valor de tração definidos em projeto"],calls:[]},
  {k:"fim",date:"27/11/26",eye:"Conclusão da superestrutura",
   html:`<h1>Via pronta<br>para o trem.</h1><p class="lead">Processo definido etapa por etapa, controlado em cada uma delas e alinhado com a operação. <b>Gerson Salomão · Coordenador de Obras · Marka Engenharia</b></p>`,
-  show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails","g-lastro","g-pn","g-mk"],train:true,tech:["Base: PL Superestrutura · PT Vias Férreas · Rev. 003 · itens 6.4.2.11 a 6.4.2.19","Datas da linha de base LB rev1, cronograma Trem de Passageiro SEM38"],calls:[]}
+  show:["g-solo","g-sub","g-amvw","g-amv","g-sleep","g-rails","g-lastro","g-pn","g-mk"],train:true,tech:["Base: PL Superestrutura · PT Vias Férreas · Rev. 003 · itens 6.4.2.11 a 6.4.2.19","Datas de referência do cronograma da obra (Trem de Passageiro)"],calls:[]}
 ];
 const ALL=["g-solo","g-sub","g-tls","g-amvw","g-amv","g-sleep","g-rails","g-talas","g-lastro","g-pn","g-mk"];
 const $=id=>document.getElementById(id);
